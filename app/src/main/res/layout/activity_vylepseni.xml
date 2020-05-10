@@ -1,10 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".Vylepseni">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Vylepseni" >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btnBodiky"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:text="2x body" />
+
+    <TextView
+        android:id="@+id/bodikyPopis"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:text="Zdvojnásobí počet bodů za klik" />
+
+    <TextView
+        android:id="@+id/bodikyCena"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:text="Cena: 200" />
+
+    <ImageView
+        android:id="@+id/bodikyFotka"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/protein" />
+
+    <Button
+        android:id="@+id/btnKritBody"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:text="Krit. body" />
+
+    <TextView
+        android:id="@+id/kritBodyPopis"
+        android:layout_width="256dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:text="Zvíší počet bodů při kritickém zásahu" />
+
+    <TextView
+        android:id="@+id/KritBodyCena"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:text="Cena: 100" />
+
+    <ImageView
+        android:id="@+id/KritBodyFotka"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/rohhojnosti" />
+
+    <Button
+        android:id="@+id/btnKritSance"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:text="krit. šance" />
+
+    <TextView
+        android:id="@+id/kritSancePopis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Zvíší šanci na kritický zásah" />
+
+    <TextView
+        android:id="@+id/kritSanceCena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Cena: 100" />
+
+    <ImageView
+        android:id="@+id/kritSanceFotka"
+        android:layout_width="401dp"
+        android:layout_height="136dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/podkova" />
+
+    <Button
+        android:id="@+id/btnZpatky"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="zpět na klik" />
+</LinearLayout>

@@ -11,8 +11,6 @@ import android.widget.Toast;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-
-
 public class Obchod extends AppCompatActivity {
 
     private MediaPlayer mp;

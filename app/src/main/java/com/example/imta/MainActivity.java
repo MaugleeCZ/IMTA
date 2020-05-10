@@ -19,8 +19,11 @@ public class MainActivity extends AppCompatActivity {
     static boolean zakoupenoBatole = false;
     static boolean zakoupenSkolak = false;
     static boolean zakoupenAngry = false;
+    static boolean zakoupenKritBody = false;
+    static boolean zakoupenKritSance = false;
+    static boolean zakoupenBodiky = false;
     private ImageView mike;
-    private int vahaKliku = 1;
+     static int vahaKliku = 1;
     static TextView tfVahaKliku;
     private MediaPlayer mp;
     static int kritBody = 2;
@@ -40,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         mike = findViewById(R.id.obrazek);
 
         otevriObchod();
+        otevriVylepseni();
         pridejBody();
 
         while(true) {
@@ -73,6 +77,20 @@ public class MainActivity extends AppCompatActivity {
     private void obchod() {
         Intent intent = new Intent(this, Obchod.class);
         startActivity(intent);
+    }
+    private void otevriVylepseni()  {
+        Button btnVylepseni = findViewById(R.id.button);
+        btnVylepseni.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                vylepseni();
+            }
+        });
+    }
+
+    private void vylepseni()    {
+        Intent in = new Intent(this, Vylepseni.class);
+        startActivity(in);
     }
 
     private void pridejBody() {
